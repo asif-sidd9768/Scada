@@ -1,0 +1,38 @@
+:root {
+  --dark-green: #18433e;
+  --light-green: #408e91;
+  --pinkish: #e49393;
+  --grey: #d8d8d8;
+}
+
+/* Header */
+nav > .container-fluid {
+  padding: 0;
+}
+/* Header */
+
+/* Homepage */
+.homepage-header {
+  font-weight: 400;
+  color: var(--dark-green);
+}
+.card-title {
+  color: var(--dark-green) !important;
+}
+.card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none !important;
+}
+.card-link-icon {
+  transition: all 0.15s ease-in-out;
+}
+.card-link-icon:hover {
+  fill: var(--pinkish) !important;
+  cursor: pointer;
+}
+.card-text {
+  font-size: 0.75rem;
+  font-weight: 200;
+  font-style: italic;
+}
+/* Homepage */
