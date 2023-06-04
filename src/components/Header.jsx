@@ -1,9 +1,11 @@
+import logoImg from "../assets/images/logo.png"
+
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-md mx-2 mx-sm-4">
       <div className="container-fluid">
         <a className="navbar-brand nav-header" href="#">
-          SG Gas Solutions
+          <img className="w-50" src={logoImg} />
         </a>
         <button
           className="navbar-toggler"

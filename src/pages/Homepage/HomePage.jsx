@@ -1,4 +1,4 @@
-import DataCard from "./components/DataCard";
+import DataCard from "../../components/DataCard";
 
 const HomePage = ({ data }) => {
   console.log(data);
