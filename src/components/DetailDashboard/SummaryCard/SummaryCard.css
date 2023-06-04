@@ -12,3 +12,7 @@
   right: 1rem;
   bottom: 0.5rem;
 }
+
+.summary-card-unit-text {
+  font-size: 0.9rem;
+}

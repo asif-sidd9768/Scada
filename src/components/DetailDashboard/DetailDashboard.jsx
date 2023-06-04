@@ -23,9 +23,9 @@ const DetailDashboard = () => {
       </div>
       <div className="d-flex border-top">
         <SummaryCard name="RUNNING STATUS" value="ON" icon="hdd-network" />
-        <SummaryCard name="REAL FLOW RATE" value="390" icon="flower1" />
-        <SummaryCard name="CUMULATIVE INJECTION" value="60121.5" icon="graph-up" />
-        <SummaryCard name="TANK LEVEL" value="281" icon="bar-chart-fill" />
+        <SummaryCard name="REAL FLOW RATE" value="390" icon="flower1" unit="m3/h" />
+        <SummaryCard name="CUMULATIVE INJECTION" value="60121.5" icon="graph-up" unit="m3" />
+        <SummaryCard name="TANK LEVEL" value="281" icon="bar-chart-fill" unit="Ltr" />
         <SummaryCard name="PUMP 1 LAST INJECTION" value="0.4199" icon="1-circle" />
         <SummaryCard name="PUMP 2 LAST INJECTION" value="0.8384" icon="2-circle" />
       </div>
