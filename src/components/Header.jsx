@@ -1,11 +1,14 @@
-import logoImg from "../assets/images/logo.png"
+import { NavLink } from "react-router-dom";
+import logoImg from "../assets/images/logo-new.png"
 
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-md mx-2 mx-sm-4">
       <div className="container-fluid">
         <a className="navbar-brand nav-header" href="#">
-          <img className="w-50" src={logoImg} />
+          <NavLink to="/">
+            <img className="w-25" src={logoImg} />
+          </NavLink>
         </a>
         <button
           className="navbar-toggler"

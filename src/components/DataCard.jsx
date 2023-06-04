@@ -1,6 +1,9 @@
-const DataCard = ({ place, location, status }) => {
+import { NavLink } from "react-router-dom";
+
+const DataCard = ({ place, location, status, id }) => {
   return (
     <div className="col-lg-3 col-md-4 col-sm-6 mb-3">
+      <NavLink to={`/dash/${id}`} className="text-decoration-none">
       <div className="card">
         <div className="card-body">
           <h5 className="card-title">{place}</h5>
@@ -43,6 +46,7 @@ const DataCard = ({ place, location, status }) => {
           </a>
         </div>
       </div>
+      </NavLink>
     </div>
   );
 };

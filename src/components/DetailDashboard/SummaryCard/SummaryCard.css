@@ -1,0 +1,14 @@
+.summary-card-container {
+  /* margin: 8px; */
+  box-sizing: border-box;
+}
+
+.summary-card-name {
+  font-size: 0.7rem;
+}
+
+.summary-card-icon {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.5rem;
+}

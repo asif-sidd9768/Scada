@@ -10,9 +10,7 @@ const HomePage = ({ data }) => {
         {data.map((d) => (
           <DataCard
             key={d.id}
-            place={d.place}
-            location={d.location}
-            status={d.status}
+            {...d}
           />
         ))}
       </div>
