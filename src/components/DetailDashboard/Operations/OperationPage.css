@@ -1,0 +1,13 @@
+.operation-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.operation-switch {
+  width: 75%;
+}
+.operation-switch span {
+  display: inline-block;
+  width: 50%;
+}
