@@ -1,4 +1,4 @@
-import "./operationpage.css";
+import "./Operationpage.css";
 const OperationPage = () => {
   return (
     <div className="operation-list">
