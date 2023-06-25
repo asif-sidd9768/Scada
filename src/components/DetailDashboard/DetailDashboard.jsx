@@ -1,7 +1,12 @@
+import { useParams } from "react-router-dom";
 import DetailAlarms from "./DetailAlarms/DetailAlarms";
 import DetailGraph from "./DetailGraph/DetailGraph";
 import SummaryCard from "./SummaryCard/SummaryCard";
+import { data } from "../../db/data";
 const DetailDashboard = () => {
+  const {dashId} = useParams()
+  const foundLocation = data.find(({id}) => id === Number(dashId))
+  console.log(foundLocation)
   const summary = [
     {
       icon: "graph-up",
@@ -67,13 +72,15 @@ const DetailDashboard = () => {
 
   return (
     <div className="px-2 dashboard">
-      <div className="py-2 border-bottom">
-        <span className="bg-secondary py-2 px-3 text-white rounded-pill mx-1">
-          DASHBOARD
+      <div className="py-2 px-3 border-bottom d-flex justify-content-between align-items-center">
+        <span>
+          <span className="bg-secondary py-2 px-3 text-white rounded-pill mx-1">
+            DASHBOARD 
+          </span><span className="text-decoration-underline">{foundLocation?.location}</span>
         </span>
         <span className="py-2 px-3 mx-1">REPORTS</span>
-        <span className="py-2 px-3 mx-1">MIMIC</span>
-        <span>Last Update: 10-05-2023 12:12:12</span>
+        {/* <span className="py-2 px-3 mx-1">MIMIC</span> */}
+        <span className="bg-success text-white py-1 px-3 rounded-3">Last Update: 10-05-2023 12:12:12</span>
       </div>
 
       <div className="d-border-top dashboard-summary ">
